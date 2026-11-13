@@ -1,0 +1,18 @@
+from datetime import datetime
+
+
+e_title = input("Enter event title: ")
+y = int(input("Enter year: "))
+m = int(input("Emter month: "))
+d = int(input("Enter day: "))
+
+date = datetime(y, m, d)
+
+print("Formatted Output:")
+
+print("Event:", e_title.strip().title().upper())
+print("Date:", date.strftime("%B %d, %Y"))
+print("Year:", date.strftime("%Y"))
+print("Month:", date.strftime("%B"))
+print("Day:", date.strftime("%e"))
+print("Weekday:", date.strftime("%A"))
