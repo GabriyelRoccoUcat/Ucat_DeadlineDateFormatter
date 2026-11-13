@@ -1,0 +1,17 @@
+from datetime import datetime
+
+
+e_title = input("Enter event title: ")
+y = int(input("Enter year: "))
+m = int(input("Emter month: "))
+d = int(input("Enter day: "))
+
+date = datetime(y, m, d)
+
+print("Output:")
+
+print("Event:", e_title)
+print('Date:', date)
+print("Year:", y)
+print("Month:", m)
+print("Day:", d)
